@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="BJ2.css" >
+    
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+  <title>BlacKJacK_2021 bootstrap</title>
+  </head>
+
+  <body style=" background-color: #FDF5E6">
+    <div class="container-fluid">
+        <div class="row">
+
+         <div class="col-sm-4 d-none d-sm-inline-block"></div>
+
+        <div class="col-xs-4 col-sm-4 com-md-4 col-lg-4">
+          <div class="style1"> 
+            <h3 id='bigTitle' s>BlacKJacK 2021</h3>
+
+          <h2 id='cashMessageG' class="col-sm-3 d-sm-inline-block"></h2>   
+          <h2 id='cashMessageD' class="col-sm-3 d-none d-sm-inline-block"></h2>  
+
+            <img id='StartImage' src="img/IMG-1.jpg" width=80% height=80% alt="колода карт"></img>
+            <h6 id='toHideRules' class="hiddenrules">
+                    Цель игры - обыграть банк.<br>
+                    Дилер раздает две карты игроку, одну карту себе.<br>
+                    Значения очков каждой карты: <br>
+                    от двойки до десятки — от 2 до 10 соответственно,<br> 
+                     у туза — 1 или 11 (считаем как выгоднее игроку),<br>
+                    Король, дама, валет — 10.<br> Сумма выше 21 - перебор.<br>
+                    Дилер берет карты после игроков,  <br>
+                    пока у него меньше 17 очков.<br>
+                    После этого подсчитывается результат игры.
+             </h6>      
+          </div>
+      </div>
+      <div class="col-sm-4 d-none d-sm-inline-block" ></div>
+
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+
+    
+             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  <div class="style1">
+                     <div id="toHide1"class="hidden">   
+                      <h5>Ваши карты</h5> 
+                      <img id='cardPicGamer1' src="img/img_back.jpg" width="60" height="85" alt="1-я карта">
+                      <img id='cardPicGamer2' src="img/img_back.jpg" width="60" height="85">
+                      <img id='cardPicGamer3' width="60" height="85">
+                       <img id='cardPicGamer4' width="60" height="85"> 
+                     </div>
+                     <div id="toHide3" class="hidden">
+                       <p id="gamerPack"></p>
+                       <p class="gamer">
+                       <span>Счёт: </span><span id="gamerScore"></span></p>   
+                    </div>
+
+               </div>            
+           </div>
+
+
+         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+              <div class="style1">
+                
+                 <div id="toHide2" class="hidden">
+                    <h5>Карты банка</h5> 
+                    <img id='cardPicDealer1' src="img/img_back.jpg" width="60" height="85" alt="1-я карта">
+                    <img id='cardPicDealer2' width="60" height="85">
+                    <img id='cardPicDealer3' width="60" height="85">
+                     <img id='cardPicDealer4' width="60" height="85">
+                 </div>
+
+                  <div id="toHide4" class="hidden">
+                      <p id="dealPack"></p>
+                      <p class="dealer"> 
+                      <span>Счёт: </span><span id="dealScore"></span></p>
+                 </div>
+
+           </div>
+       </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    </div>
+
+    <div class="clearfix visible-sm-block visible-lg-block" ></div>
+
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+     </div>
+
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+       <div class="style1" id="header">
+          <button id="buttonStart">Начать игру</button> 
+          <input id="rulesButton" type="submit" value='Уточнить правила' ></input> 
+        </div>   
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+    
+    <div class="clearfix visible-md-block visible-lg-block"></div>
+
+    <div class="col-md-12 d-none d-md-block">
+      <div class="style4"></div>
+    </div>
+
+    <div class="style3">
+   
+            <button id='startCard' class="hidden">Раздать</button>
+            <button id='moreCard' class="hidden">Ещё карту?</button>
+            <button id='deny' class="hidden">Играет банк</button>
+
+            <button id='buttonReload' class="hidden">Играть еще раз</button>           
+ 
+        <h2 id='gameMessage'></h2>   
+    </div>
+
+  </div>
+</div>
+    
+      <script src="js/bootstrap.js"></script>
+      <script src="BJ2.js"></script>
+    
+  </body>
+</html>
+
